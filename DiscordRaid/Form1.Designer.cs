@@ -40,11 +40,15 @@
             this.messageBox = new MetroFramework.Controls.MetroTextBox();
             this.channelIDBox = new MetroFramework.Controls.MetroTextBox();
             this.inviteBox = new MetroFramework.Controls.MetroTextBox();
+            this.quitButton = new MetroFramework.Controls.MetroButton();
+            this.leaveServer = new MetroFramework.Controls.MetroButton();
+            this.timeout = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // spamButton
             // 
-            this.spamButton.Location = new System.Drawing.Point(23, 277);
+            this.spamButton.Location = new System.Drawing.Point(23, 323);
             this.spamButton.Name = "spamButton";
             this.spamButton.Size = new System.Drawing.Size(111, 23);
             this.spamButton.TabIndex = 12;
@@ -53,7 +57,7 @@
             // 
             // stopButton
             // 
-            this.stopButton.Location = new System.Drawing.Point(141, 277);
+            this.stopButton.Location = new System.Drawing.Point(139, 323);
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(101, 23);
             this.stopButton.TabIndex = 13;
@@ -64,9 +68,9 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.ForeColor = System.Drawing.Color.Red;
-            this.metroLabel1.Location = new System.Drawing.Point(24, 139);
+            this.metroLabel1.Location = new System.Drawing.Point(23, 131);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(151, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(194, 25);
             this.metroLabel1.TabIndex = 14;
             this.metroLabel1.Text = "Enter Server Invite Code";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -104,6 +108,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.ForeColor = System.Drawing.Color.White;
             this.textBox2.Location = new System.Drawing.Point(296, 44);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -116,9 +121,9 @@
             // 
             // messageBox
             // 
-            this.messageBox.Location = new System.Drawing.Point(23, 251);
+            this.messageBox.Location = new System.Drawing.Point(24, 251);
             this.messageBox.Name = "messageBox";
-            this.messageBox.Size = new System.Drawing.Size(219, 20);
+            this.messageBox.Size = new System.Drawing.Size(216, 20);
             this.messageBox.TabIndex = 21;
             this.messageBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
@@ -126,7 +131,7 @@
             // 
             this.channelIDBox.Location = new System.Drawing.Point(23, 206);
             this.channelIDBox.Name = "channelIDBox";
-            this.channelIDBox.Size = new System.Drawing.Size(219, 20);
+            this.channelIDBox.Size = new System.Drawing.Size(217, 20);
             this.channelIDBox.TabIndex = 22;
             this.channelIDBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
@@ -134,15 +139,56 @@
             // 
             this.inviteBox.Location = new System.Drawing.Point(23, 161);
             this.inviteBox.Name = "inviteBox";
-            this.inviteBox.Size = new System.Drawing.Size(219, 20);
+            this.inviteBox.Size = new System.Drawing.Size(217, 20);
             this.inviteBox.TabIndex = 23;
             this.inviteBox.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // quitButton
+            // 
+            this.quitButton.Location = new System.Drawing.Point(688, 10);
+            this.quitButton.Name = "quitButton";
+            this.quitButton.Size = new System.Drawing.Size(89, 28);
+            this.quitButton.TabIndex = 24;
+            this.quitButton.Text = "Quit";
+            this.quitButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // leaveServer
+            // 
+            this.leaveServer.Location = new System.Drawing.Point(23, 352);
+            this.leaveServer.Name = "leaveServer";
+            this.leaveServer.Size = new System.Drawing.Size(217, 23);
+            this.leaveServer.TabIndex = 25;
+            this.leaveServer.Text = "Leave Server";
+            this.leaveServer.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // timeout
+            // 
+            this.timeout.Location = new System.Drawing.Point(23, 297);
+            this.timeout.Name = "timeout";
+            this.timeout.Size = new System.Drawing.Size(217, 20);
+            this.timeout.TabIndex = 26;
+            this.timeout.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(23, 272);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(92, 19);
+            this.metroLabel4.TabIndex = 27;
+            this.metroLabel4.Text = "Timeout in ms";
+            this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
+            this.Controls.Add(this.metroLabel4);
+            this.Controls.Add(this.timeout);
+            this.Controls.Add(this.leaveServer);
+            this.Controls.Add(this.quitButton);
             this.Controls.Add(this.inviteBox);
             this.Controls.Add(this.channelIDBox);
             this.Controls.Add(this.messageBox);
@@ -179,6 +225,10 @@
         private MetroFramework.Controls.MetroTextBox messageBox;
         private MetroFramework.Controls.MetroTextBox channelIDBox;
         private MetroFramework.Controls.MetroTextBox inviteBox;
+        private MetroFramework.Controls.MetroButton quitButton;
+        private MetroFramework.Controls.MetroButton leaveServer;
+        private MetroFramework.Controls.MetroTextBox timeout;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
     }
 }
 
