@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DiscordRaid")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Discord Raid")]
+[assembly: AssemblyDescription("Raid Discord Servers Using User Tokens")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DiscordRaid")]
+[assembly: AssemblyCompany("RustyBalboaDev")]
+[assembly: AssemblyProduct("Discord Raid")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
