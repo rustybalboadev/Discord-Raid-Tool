@@ -1,0 +1,14 @@
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\obj\Debug\DiscordRaid.csprojAssemblyReference.cache
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\obj\Debug\DiscordRaid.Form1.resources
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\obj\Debug\DiscordRaid.Properties.Resources.resources
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\obj\Debug\DiscordRaid.csproj.GenerateResource.cache
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\obj\Debug\DiscordRaid.csproj.CoreCompileInputs.cache
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\bin\Debug\DiscordRaid.exe.config
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\bin\Debug\DiscordRaid.exe
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\bin\Debug\DiscordRaid.pdb
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\bin\Debug\RestSharp.xml
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\obj\Debug\DiscordRaid.csproj.Fody.CopyLocal.cache
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\obj\Debug\DiscordRaid.csproj.CopyComplete
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\obj\Debug\DiscordRaid.exe
+C:\Users\rusty\source\repos\discord-raid-tool\DiscordRaid\obj\Debug\DiscordRaid.pdb

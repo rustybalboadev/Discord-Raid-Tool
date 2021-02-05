@@ -28,53 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.spamButton = new MetroFramework.Controls.MetroButton();
-            this.stopButton = new MetroFramework.Controls.MetroButton();
+            this.startSpam = new MetroFramework.Controls.MetroButton();
+            this.stopSpam = new MetroFramework.Controls.MetroButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.tokenLoaded = new MetroFramework.Controls.MetroLabel();
-            this.textBox2 = new MetroFramework.Controls.MetroTextBox();
-            this.messageBox = new MetroFramework.Controls.MetroTextBox();
-            this.channelIDBox = new MetroFramework.Controls.MetroTextBox();
-            this.inviteBox = new MetroFramework.Controls.MetroTextBox();
+            this.tokenTextBox = new MetroFramework.Controls.MetroTextBox();
+            this.messageTextBox = new MetroFramework.Controls.MetroTextBox();
+            this.channelTextBox = new MetroFramework.Controls.MetroTextBox();
+            this.inviteTextBox = new MetroFramework.Controls.MetroTextBox();
             this.quitButton = new MetroFramework.Controls.MetroButton();
             this.leaveServer = new MetroFramework.Controls.MetroButton();
-            this.timeout = new MetroFramework.Controls.MetroTextBox();
+            this.timeoutTextBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.inviteButton = new MetroFramework.Controls.MetroButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.reactionChannelID = new MetroFramework.Controls.MetroTextBox();
-            this.reactionMessageID = new MetroFramework.Controls.MetroTextBox();
-            this.emojiTextBox = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.reactionButton = new MetroFramework.Controls.MetroButton();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
-            this.addReactionButton = new MetroFramework.Controls.MetroButton();
-            this.inviteAllButton = new MetroFramework.Controls.MetroButton();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.emojiTextBox = new MetroFramework.Controls.MetroTextBox();
+            this.reactionMessageID = new MetroFramework.Controls.MetroTextBox();
+            this.reactionChannelID = new MetroFramework.Controls.MetroTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // spamButton
+            // startSpam
             // 
-            this.spamButton.Location = new System.Drawing.Point(18, 254);
-            this.spamButton.Name = "spamButton";
-            this.spamButton.Size = new System.Drawing.Size(111, 23);
-            this.spamButton.TabIndex = 12;
-            this.spamButton.Text = "Start Spam";
-            this.spamButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.startSpam.Location = new System.Drawing.Point(19, 252);
+            this.startSpam.Name = "startSpam";
+            this.startSpam.Size = new System.Drawing.Size(111, 23);
+            this.startSpam.TabIndex = 12;
+            this.startSpam.Text = "Start Spam";
+            this.startSpam.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.startSpam.Click += new System.EventHandler(this.startSpam_Click);
             // 
-            // stopButton
+            // stopSpam
             // 
-            this.stopButton.Location = new System.Drawing.Point(134, 254);
-            this.stopButton.Name = "stopButton";
-            this.stopButton.Size = new System.Drawing.Size(101, 23);
-            this.stopButton.TabIndex = 13;
-            this.stopButton.Text = "Stop Spam";
-            this.stopButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.stopSpam.Location = new System.Drawing.Point(134, 252);
+            this.stopSpam.Name = "stopSpam";
+            this.stopSpam.Size = new System.Drawing.Size(101, 23);
+            this.stopSpam.TabIndex = 13;
+            this.stopSpam.Text = "Stop Spam";
+            this.stopSpam.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.stopSpam.Click += new System.EventHandler(this.stopSpam_Click);
             // 
             // metroLabel1
             // 
@@ -118,42 +118,46 @@
             this.tokenLoaded.Text = "Tokens Loaded";
             this.tokenLoaded.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // textBox2
+            // tokenTextBox
             // 
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(563, 63);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(481, 383);
-            this.textBox2.TabIndex = 20;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.tokenTextBox.ForeColor = System.Drawing.Color.White;
+            this.tokenTextBox.Location = new System.Drawing.Point(563, 63);
+            this.tokenTextBox.Multiline = true;
+            this.tokenTextBox.Name = "tokenTextBox";
+            this.tokenTextBox.ReadOnly = true;
+            this.tokenTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tokenTextBox.Size = new System.Drawing.Size(481, 383);
+            this.tokenTextBox.TabIndex = 23;
+            this.tokenTextBox.TabStop = false;
+            this.tokenTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tokenTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // messageBox
+            // messageTextBox
             // 
-            this.messageBox.Location = new System.Drawing.Point(19, 147);
-            this.messageBox.Name = "messageBox";
-            this.messageBox.Size = new System.Drawing.Size(216, 20);
-            this.messageBox.TabIndex = 21;
-            this.messageBox.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.messageTextBox.Location = new System.Drawing.Point(19, 147);
+            this.messageTextBox.Name = "messageTextBox";
+            this.messageTextBox.PromptText = "u r loser lol";
+            this.messageTextBox.Size = new System.Drawing.Size(216, 20);
+            this.messageTextBox.TabIndex = 21;
+            this.messageTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // channelIDBox
+            // channelTextBox
             // 
-            this.channelIDBox.Location = new System.Drawing.Point(18, 102);
-            this.channelIDBox.Name = "channelIDBox";
-            this.channelIDBox.Size = new System.Drawing.Size(217, 20);
-            this.channelIDBox.TabIndex = 22;
-            this.channelIDBox.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.channelTextBox.Location = new System.Drawing.Point(18, 102);
+            this.channelTextBox.Name = "channelTextBox";
+            this.channelTextBox.PromptText = "769013685929902110";
+            this.channelTextBox.Size = new System.Drawing.Size(217, 20);
+            this.channelTextBox.TabIndex = 22;
+            this.channelTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // inviteBox
+            // inviteTextBox
             // 
-            this.inviteBox.Location = new System.Drawing.Point(18, 57);
-            this.inviteBox.Name = "inviteBox";
-            this.inviteBox.Size = new System.Drawing.Size(217, 20);
-            this.inviteBox.TabIndex = 23;
-            this.inviteBox.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.inviteTextBox.Location = new System.Drawing.Point(18, 57);
+            this.inviteTextBox.Name = "inviteTextBox";
+            this.inviteTextBox.PromptText = "K3zW8psRTp";
+            this.inviteTextBox.Size = new System.Drawing.Size(217, 20);
+            this.inviteTextBox.TabIndex = 20;
+            this.inviteTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // quitButton
             // 
@@ -163,23 +167,26 @@
             this.quitButton.TabIndex = 24;
             this.quitButton.Text = "Quit";
             this.quitButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
             // 
             // leaveServer
             // 
-            this.leaveServer.Location = new System.Drawing.Point(18, 283);
+            this.leaveServer.Location = new System.Drawing.Point(18, 281);
             this.leaveServer.Name = "leaveServer";
             this.leaveServer.Size = new System.Drawing.Size(217, 23);
             this.leaveServer.TabIndex = 25;
             this.leaveServer.Text = "Leave Server";
             this.leaveServer.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.leaveServer.Click += new System.EventHandler(this.leaveServer_Click);
             // 
-            // timeout
+            // timeoutTextBox
             // 
-            this.timeout.Location = new System.Drawing.Point(18, 193);
-            this.timeout.Name = "timeout";
-            this.timeout.Size = new System.Drawing.Size(217, 20);
-            this.timeout.TabIndex = 26;
-            this.timeout.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.timeoutTextBox.Location = new System.Drawing.Point(18, 193);
+            this.timeoutTextBox.Name = "timeoutTextBox";
+            this.timeoutTextBox.PromptText = "300";
+            this.timeoutTextBox.Size = new System.Drawing.Size(217, 20);
+            this.timeoutTextBox.TabIndex = 26;
+            this.timeoutTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // metroLabel4
             // 
@@ -193,18 +200,18 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.inviteAllButton);
+            this.groupBox1.Controls.Add(this.inviteButton);
             this.groupBox1.Controls.Add(this.metroLabel4);
-            this.groupBox1.Controls.Add(this.timeout);
+            this.groupBox1.Controls.Add(this.timeoutTextBox);
             this.groupBox1.Controls.Add(this.leaveServer);
-            this.groupBox1.Controls.Add(this.inviteBox);
-            this.groupBox1.Controls.Add(this.channelIDBox);
-            this.groupBox1.Controls.Add(this.messageBox);
+            this.groupBox1.Controls.Add(this.inviteTextBox);
+            this.groupBox1.Controls.Add(this.channelTextBox);
+            this.groupBox1.Controls.Add(this.messageTextBox);
             this.groupBox1.Controls.Add(this.metroLabel1);
             this.groupBox1.Controls.Add(this.metroLabel3);
             this.groupBox1.Controls.Add(this.metroLabel2);
-            this.groupBox1.Controls.Add(this.stopButton);
-            this.groupBox1.Controls.Add(this.spamButton);
+            this.groupBox1.Controls.Add(this.stopSpam);
+            this.groupBox1.Controls.Add(this.startSpam);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(5, 104);
             this.groupBox1.Name = "groupBox1";
@@ -213,9 +220,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Invite/Spam";
             // 
+            // inviteButton
+            // 
+            this.inviteButton.Location = new System.Drawing.Point(18, 219);
+            this.inviteButton.Name = "inviteButton";
+            this.inviteButton.Size = new System.Drawing.Size(216, 27);
+            this.inviteButton.TabIndex = 28;
+            this.inviteButton.Text = "Invite";
+            this.inviteButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.inviteButton.Click += new System.EventHandler(this.inviteButton_Click);
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.addReactionButton);
+            this.groupBox2.Controls.Add(this.reactionButton);
             this.groupBox2.Controls.Add(this.metroLabel7);
             this.groupBox2.Controls.Add(this.metroLabel6);
             this.groupBox2.Controls.Add(this.metroLabel5);
@@ -230,49 +247,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Add Reaction";
             // 
-            // reactionChannelID
+            // reactionButton
             // 
-            this.reactionChannelID.Location = new System.Drawing.Point(16, 57);
-            this.reactionChannelID.Name = "reactionChannelID";
-            this.reactionChannelID.Size = new System.Drawing.Size(217, 20);
-            this.reactionChannelID.TabIndex = 0;
-            this.reactionChannelID.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // reactionMessageID
-            // 
-            this.reactionMessageID.Location = new System.Drawing.Point(16, 102);
-            this.reactionMessageID.Name = "reactionMessageID";
-            this.reactionMessageID.Size = new System.Drawing.Size(217, 20);
-            this.reactionMessageID.TabIndex = 1;
-            this.reactionMessageID.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // emojiTextBox
-            // 
-            this.emojiTextBox.Location = new System.Drawing.Point(16, 147);
-            this.emojiTextBox.Name = "emojiTextBox";
-            this.emojiTextBox.Size = new System.Drawing.Size(217, 20);
-            this.emojiTextBox.TabIndex = 2;
-            this.emojiTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // metroLabel5
-            // 
-            this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(16, 27);
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(72, 19);
-            this.metroLabel5.TabIndex = 3;
-            this.metroLabel5.Text = "Channel ID";
-            this.metroLabel5.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // metroLabel6
-            // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(16, 80);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(154, 19);
-            this.metroLabel6.TabIndex = 4;
-            this.metroLabel6.Text = "Message ID with reaction";
-            this.metroLabel6.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.reactionButton.Location = new System.Drawing.Point(17, 193);
+            this.reactionButton.Name = "reactionButton";
+            this.reactionButton.Size = new System.Drawing.Size(216, 27);
+            this.reactionButton.TabIndex = 6;
+            this.reactionButton.Text = "Add Reaction";
+            this.reactionButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.reactionButton.Click += new System.EventHandler(this.reactionButton_Click);
             // 
             // metroLabel7
             // 
@@ -284,23 +267,51 @@
             this.metroLabel7.Text = "Emoji";
             this.metroLabel7.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // addReactionButton
+            // metroLabel6
             // 
-            this.addReactionButton.Location = new System.Drawing.Point(17, 193);
-            this.addReactionButton.Name = "addReactionButton";
-            this.addReactionButton.Size = new System.Drawing.Size(216, 27);
-            this.addReactionButton.TabIndex = 6;
-            this.addReactionButton.Text = "Add Reaction";
-            this.addReactionButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.Location = new System.Drawing.Point(16, 80);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(154, 19);
+            this.metroLabel6.TabIndex = 4;
+            this.metroLabel6.Text = "Message ID with reaction";
+            this.metroLabel6.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // inviteAllButton
+            // metroLabel5
             // 
-            this.inviteAllButton.Location = new System.Drawing.Point(18, 219);
-            this.inviteAllButton.Name = "inviteAllButton";
-            this.inviteAllButton.Size = new System.Drawing.Size(216, 27);
-            this.inviteAllButton.TabIndex = 28;
-            this.inviteAllButton.Text = "Invite";
-            this.inviteAllButton.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(16, 27);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(72, 19);
+            this.metroLabel5.TabIndex = 3;
+            this.metroLabel5.Text = "Channel ID";
+            this.metroLabel5.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // emojiTextBox
+            // 
+            this.emojiTextBox.Location = new System.Drawing.Point(16, 147);
+            this.emojiTextBox.Name = "emojiTextBox";
+            this.emojiTextBox.Size = new System.Drawing.Size(217, 20);
+            this.emojiTextBox.TabIndex = 2;
+            this.emojiTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // reactionMessageID
+            // 
+            this.reactionMessageID.Location = new System.Drawing.Point(16, 102);
+            this.reactionMessageID.Name = "reactionMessageID";
+            this.reactionMessageID.PromptText = "807033702932545588";
+            this.reactionMessageID.Size = new System.Drawing.Size(217, 20);
+            this.reactionMessageID.TabIndex = 1;
+            this.reactionMessageID.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // reactionChannelID
+            // 
+            this.reactionChannelID.Location = new System.Drawing.Point(16, 57);
+            this.reactionChannelID.Name = "reactionChannelID";
+            this.reactionChannelID.PromptText = "769013685929902110";
+            this.reactionChannelID.Size = new System.Drawing.Size(217, 20);
+            this.reactionChannelID.TabIndex = 0;
+            this.reactionChannelID.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // Form1
             // 
@@ -311,7 +322,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.quitButton);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tokenTextBox);
             this.Controls.Add(this.tokenLoaded);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -331,32 +342,30 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolTip toolTip1;
-        private MetroFramework.Controls.MetroButton spamButton;
-        private MetroFramework.Controls.MetroButton stopButton;
+        private MetroFramework.Controls.MetroButton startSpam;
+        private MetroFramework.Controls.MetroButton stopSpam;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel tokenLoaded;
-        private MetroFramework.Controls.MetroTextBox textBox2;
-        private MetroFramework.Controls.MetroTextBox messageBox;
-        private MetroFramework.Controls.MetroTextBox channelIDBox;
-        private MetroFramework.Controls.MetroTextBox inviteBox;
+        private MetroFramework.Controls.MetroTextBox tokenTextBox;
+        private MetroFramework.Controls.MetroTextBox messageTextBox;
+        private MetroFramework.Controls.MetroTextBox channelTextBox;
+        private MetroFramework.Controls.MetroTextBox inviteTextBox;
         private MetroFramework.Controls.MetroButton quitButton;
         private MetroFramework.Controls.MetroButton leaveServer;
-        private MetroFramework.Controls.MetroTextBox timeout;
+        private MetroFramework.Controls.MetroTextBox timeoutTextBox;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private MetroFramework.Controls.MetroButton addReactionButton;
+        private MetroFramework.Controls.MetroButton reactionButton;
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroTextBox emojiTextBox;
         private MetroFramework.Controls.MetroTextBox reactionMessageID;
         private MetroFramework.Controls.MetroTextBox reactionChannelID;
-        private MetroFramework.Controls.MetroButton inviteAllButton;
+        private MetroFramework.Controls.MetroButton inviteButton;
     }
 }
 
