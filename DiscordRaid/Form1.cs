@@ -24,8 +24,11 @@ namespace DiscordRaid
             InitializeComponent();
 
             foreach (string token in File.ReadAllLines(Directory.GetCurrentDirectory() + "/tokens.txt")) {
-                tokenList.Add(token);
-                tokenTextBox.Text += token + Environment.NewLine;
+                if (token != "" || token != Environment.NewLine)
+                {
+                    tokenList.Add(token);
+                    tokenTextBox.Text += token + Environment.NewLine;
+                }
             }
             
             //Fix Prompt Text Bug
