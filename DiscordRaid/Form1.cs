@@ -16,7 +16,9 @@ namespace DiscordRaid
     {
         bool invited, stop;
         List<string> tokenList = new List<string>();
+        List<string> badTokens = new List<string>();
         string invite, channelID, message, timeout, guildID;
+        int failedTokens = 0;
 
 
         public Form1()
@@ -87,10 +89,19 @@ namespace DiscordRaid
                     IRestResponse response = client.Execute(request);
                     if (!response.IsSuccessful)
                     {
-                        tokenList.Remove(token);
+                        //tokenList.Remove(token);
+                        badTokens.Add(token);
+                        failedTokens += 1;
+                        failedTokensTextBox.Text = "Failed Tokens: " + failedTokens.ToString();
+                    } else
+                    {
+                        dynamic data = JsonConvert.DeserializeObject(response.Content);
+                        guildID = data.guild.id;
                     }
-                    dynamic data = JsonConvert.DeserializeObject(response.Content);
-                    guildID = data.guild.id;
+                }
+                foreach (string token in badTokens)
+                {
+                    tokenList.Remove(token);
                 }
             }
             else

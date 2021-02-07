@@ -52,6 +52,7 @@
             this.emojiTextBox = new MetroFramework.Controls.MetroTextBox();
             this.reactionMessageID = new MetroFramework.Controls.MetroTextBox();
             this.reactionChannelID = new MetroFramework.Controls.MetroTextBox();
+            this.failedTokensTextBox = new MetroFramework.Controls.MetroLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -313,12 +314,23 @@
             this.reactionChannelID.TabIndex = 0;
             this.reactionChannelID.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
+            // failedTokensTextBox
+            // 
+            this.failedTokensTextBox.AutoSize = true;
+            this.failedTokensTextBox.Location = new System.Drawing.Point(5, 82);
+            this.failedTokensTextBox.Name = "failedTokensTextBox";
+            this.failedTokensTextBox.Size = new System.Drawing.Size(92, 19);
+            this.failedTokensTextBox.TabIndex = 30;
+            this.failedTokensTextBox.Text = "Failed Tokens: ";
+            this.failedTokensTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 476);
             this.ControlBox = false;
+            this.Controls.Add(this.failedTokensTextBox);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.quitButton);
@@ -366,6 +378,7 @@
         private MetroFramework.Controls.MetroTextBox reactionMessageID;
         private MetroFramework.Controls.MetroTextBox reactionChannelID;
         private MetroFramework.Controls.MetroButton inviteButton;
+        private MetroFramework.Controls.MetroLabel failedTokensTextBox;
     }
 }
 
